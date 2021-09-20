@@ -1,0 +1,188 @@
+@charset "UTF-8";
+/*共通部分*/
+html{
+  font-size:100%;
+}
+body{
+  line-height:1.7;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.wrapper{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 4%;
+}
+a{
+  text-decoration:none;
+}
+img{
+  max-width:100%;
+}
+
+/*大きな背景画像*/
+.big-bg{
+  background-size:cover;
+  background-position:center top;
+  background-repeat:no-repeat;
+  min-height:100vh;
+}
+
+/*header*/
+.page-header{
+  display:flex;
+  justify-content:space-between;
+  font-weight:bold;
+}
+.logo{
+  width:210px;
+  margin-top:14px;
+}
+.main-nav{
+  display:flex;
+  font-size:1.25rem;
+  text-transform:uppercase;
+  margin-top:34px;
+  list-style:none;
+}
+.main-nav li{
+  margin-left:36px;
+}
+.main-nav a{
+  color:#8fbc8f;
+}
+.main-nav a:hover{
+  color:#0bd;
+}
+
+/*見出し*/
+.page-title{
+  font-size:5rem;
+  text-transform:uppercase;
+}
+
+/*footer*/
+footer{
+  background:#432;
+  text-align:center;
+  padding:26px 0;
+}
+footer p{
+  color:#fff;
+  font-size:0.875rem;
+}
+
+/*home*/
+#home{
+  background-image:url(../images/bg-home1.jpg);
+  min-height:100vh;
+}
+.home-content{
+  color:#8fbc8f;
+  text-align:center;
+  margin-top:10%;
+}
+.home-content p{
+  font-size:1.125rem;
+  margin:10px 0;
+}
+
+/*ボタン*/
+.button-content{
+  display:flex;
+  justify-content:space-between;
+  padding:10% 10% 0;
+}
+.button{
+  font-size:1.375rem;
+  font-weight:bold;
+  background:silver;
+  color:gray;
+  border-radius:5px;
+  padding:18px 32px;
+  text-transform:uppercase;
+}
+.button:hover{
+  background:#0090aa;
+}
+
+/*comic*/
+#comic{
+  background-image:url(../images/bg-comic.jpg);
+  min-height:100vh;
+}
+.comic-content{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+}
+.comic-content1{
+  text-align:center;
+  padding-top:30%;
+  color:aqua;
+}
+.grid{
+  display:grid;
+  gap:26px;
+  grid-template-columns:repeat(3,1fr);
+  padding-top:6%;
+  padding-bottom:50px
+}
+.item a:hover{
+  color:#0bd;
+}
+.item a{
+  font-size:1.4rem;
+  color:white;
+  text-align:center;
+}
+.comic1{
+  background-image:url(../images/bg-comic1.jpg);
+}
+
+/*anime*/
+#anime{
+  background-image:url(../images/bg-anime.jpeg);
+  min-height:100vh;
+}
+.anime-content{
+  text-align:center;
+  padding-top:20%;
+  color:purple;
+}
+.anime1{
+  background-image:url(../images/bg-anime1.jpg);
+}
+
+/*main*/
+.item{
+  display:inline-block;
+  position:relative;
+  width:295px;
+  height:295px;
+  overflow:hidden;
+}
+.item strong{
+  z-index:1;
+  position:absolute;
+  bottom:0px;
+  display:block;
+  width:295px;
+  height:50px;
+  line-height:50px;
+  color:white;
+  font-size:20px;
+  background-color:rgba(0,0,0,0.5);
+  opacity:0;
+  left:-200%;
+}
+.item span{
+  z-index:0;
+  position:absolute;
+  top:0px;
+  display:block;
+  width:295px;
+  height:295px;
+  box-shadow:inset 0 0 50px rgba(50,30,0,0.6),
+             inset 0 0 100px rgba(50,30,0,0.3);
+  background-color:rgba(238,130,238,0.2);
+  opacity:0;
+}
